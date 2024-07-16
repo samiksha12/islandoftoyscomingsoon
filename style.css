@@ -1,0 +1,76 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.treasure {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 25%;
+  height: auto;
+}
+
+.roadmap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Makes the SVG not interfere with clicks */
+}
+
+.roadmap-path {
+  fill: none;
+  stroke: black;
+  stroke-width: 2;
+  stroke-dasharray: 4;
+}
+.bear-walk {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.bear {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    opacity: 0;
+    animation: bear-animation 9s infinite;
+}
+
+.bear1 {
+    animation-delay: 0s;
+}
+
+.bear2 {
+    animation-delay: 3s;
+}
+
+.bear3 {
+    animation-delay: 6s;
+}
+
+@keyframes bear-animation {
+    0%, 33.33% {
+        opacity: 0;
+    }
+    11.11%, 22.22% {
+        opacity: 1;
+    }
+}
+
