@@ -106,7 +106,7 @@ html {
 .adventure-text {
   position: absolute;
   top: 80%;
-  width: 100%;
+  width: 75%;
   /* text-align: center; */
   font-family: "Chewy", system-ui;
   font-weight: 400;
@@ -115,4 +115,30 @@ html {
   color: #333;
   padding: 20px 20px;
   /* box-sizing: border-box; */
+}
+
+@media (max-width: 600px) {
+    .adventure-text {
+        font-size: 16px; /* Adjust the font size for small screens */
+        padding: 10px 10px; /* Adjust the padding if necessary */
+       
+    }
+
+    .conversation-bubble {
+        font-size: 10px; /* Adjust the font size for small screens */
+        width: 100px; /* Adjust the width if necessary */
+    }
+
+    .bear-walk {
+        width: 80px; /* Adjust the size of the bear-walk container */
+        height: 80px; /* Adjust the size of the bear-walk container */
+    }
+
+    .bear {
+        width: 80px; /* Adjust the size of the bears */
+    }
+
+    /* .treasure {
+        width: 80px; /* Adjust the size of the treasure chest */
+    } */
 }
