@@ -65,19 +65,18 @@ html {
 }
 
 .bear-walk {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
 }
-
 .bear {
   position: absolute;
   width: 100px;
   height: auto;
   opacity: 0;
-  animation: bear-animation 9s infinite;
+  animation: bear-animation 6s infinite; /* Shortened animation duration */
 }
 
 .bear1 {
@@ -85,23 +84,24 @@ html {
 }
 
 .bear2 {
-  animation-delay: 3s;
+  animation-delay: 2s; /* Adjusted timing for quicker transitions */
 }
 
 .bear3 {
-  animation-delay: 6s;
+  animation-delay: 4s; /* Adjusted timing for quicker transitions */
 }
 
 @keyframes bear-animation {
-  0%,
-  33.33% {
-    opacity: 0;
+    0%,
+    33.33% {
+      opacity: 0;
+    }
+    11.11%,
+    22.22% {
+      opacity: 1;
+    }
   }
-  11.11%,
-  22.22% {
-    opacity: 1;
-  }
-}
+
 
 .adventure-text {
   position: absolute;
@@ -115,30 +115,31 @@ html {
   color: #333;
   padding: 20px 20px;
   /* box-sizing: border-box; */
+  word-wrap: break-word; /* Ensures long words break and wrap to the next line */
+  word-break: break-word;
 }
 
 @media (max-width: 600px) {
-    .adventure-text {
-        font-size: 16px; /* Adjust the font size for small screens */
-        padding: 10px 10px; /* Adjust the padding if necessary */
-       
-    }
+  .adventure-text {
+    font-size: 16px; /* Adjust the font size for small screens */
+    padding: 10px 10px; /* Adjust the padding if necessary */
+  }
 
-    .conversation-bubble {
-        font-size: 10px; /* Adjust the font size for small screens */
-        width: 100px; /* Adjust the width if necessary */
-    }
+  .conversation-bubble {
+    font-size: 10px; /* Adjust the font size for small screens */
+    width: 100px; /* Adjust the width if necessary */
+  }
 
-    .bear-walk {
-        width: 80px; /* Adjust the size of the bear-walk container */
-        height: 80px; /* Adjust the size of the bear-walk container */
-    }
+  .bear-walk {
+    width: 80px; /* Adjust the size of the bear-walk container */
+    height: 80px; /* Adjust the size of the bear-walk container */
+  }
 
-    .bear {
-        width: 80px; /* Adjust the size of the bears */
-    }
+  .bear {
+    width: 80px; /* Adjust the size of the bears */
+  }
 
-    .treasure {
-        width: 30%; /* Adjust the size of the treasure chest */
-    }
+  .treasure {
+    width: 30%; /* Adjust the size of the treasure chest */
+  }
 }
