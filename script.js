@@ -12,10 +12,10 @@ function updateCountdown() {
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     countdownElement.innerHTML = `
-        <div>${days}d</div>
-        <div>${hours}h</div>
-        <div>${minutes}m</div>
-        <div>${seconds}s</div>
+        <span>${days}d</span>
+        <span>${hours}h</span>
+        <span>${minutes}m</span>
+        <span>${seconds}s</span>
     `;
 
     if (distance < 0) {
@@ -26,10 +26,4 @@ function updateCountdown() {
 // Update every second
 setInterval(updateCountdown, 1000);
 
-// Toy adventure scene (you can use CSS animations or JavaScript for animation effects)
-// Example: Displaying animated or static images of toys on an adventure
-// You can replace this with your own animation logic
-const toySceneElement = document.getElementById('toy-scene');
-toySceneElement.innerHTML = `
-    <!-- Your animated or static toy adventure content goes here -->
-`;
+

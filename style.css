@@ -37,40 +37,82 @@ html {
   stroke-width: 2;
   stroke-dasharray: 4;
 }
+.conversation-bubble {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  width: 120px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  transform: translateX(50%);
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+.conversation-bubble:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
 .bear-walk {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .bear {
-    position: absolute;
-    width: 100px;
-    height: auto;
-    opacity: 0;
-    animation: bear-animation 9s infinite;
+  position: absolute;
+  width: 100px;
+  height: auto;
+  opacity: 0;
+  animation: bear-animation 9s infinite;
 }
 
 .bear1 {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .bear2 {
-    animation-delay: 3s;
+  animation-delay: 3s;
 }
 
 .bear3 {
-    animation-delay: 6s;
+  animation-delay: 6s;
 }
 
 @keyframes bear-animation {
-    0%, 33.33% {
-        opacity: 0;
-    }
-    11.11%, 22.22% {
-        opacity: 1;
-    }
+  0%,
+  33.33% {
+    opacity: 0;
+  }
+  11.11%,
+  22.22% {
+    opacity: 1;
+  }
 }
 
+.adventure-text {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  /* text-align: center; */
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  color: #333;
+  padding: 20px 20px;
+  /* box-sizing: border-box; */
+}

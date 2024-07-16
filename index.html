@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teddy Bear Animation</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,15 +16,19 @@
     <img src="images/companylogo.jpeg" class="treasure" alt="Treasure Chest">
     <svg class="roadmap" viewBox="0 0 100 100" preserveAspectRatio="none">
       <path d="M 25 25 C 20 10, 50 70, 60 50 C 80 30, 70 70, 90 90" class="roadmap-path"></path>
-  </svg>
+    </svg>
     <div class="bear-walk">
+      <div class="conversation-bubble">Just a little longer!</div>
       <img src="images/bear1.png" class="bear bear1" alt="Bear">
       <img src="images/bear2.png" class="bear bear2" alt="Bear">
       <img src="images/bear3.png" class="bear bear3" alt="Bear">
     </div>
+    <div class="adventure-text">Our toys are on a wild adventure to the island! Will they make it by the grand opening?
+      <div id="countdown"></div>
+    </div>
   </div>
 
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
 </body>
 
 </html>
