@@ -138,7 +138,7 @@ html {
         width: 80px; /* Adjust the size of the bears */
     }
 
-    /* .treasure {
-        width: 80px; /* Adjust the size of the treasure chest */
-    } */
+    .treasure {
+        width: 30%; /* Adjust the size of the treasure chest */
+    }
 }
