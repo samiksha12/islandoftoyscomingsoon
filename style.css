@@ -74,9 +74,9 @@ html {
 .bear {
   position: absolute;
   width: 100px;
-  height: auto;
+  height: 150px;
   opacity: 0;
-  animation: bear-animation 6s infinite; /* Shortened animation duration */
+  animation: bear-animation 8s infinite; /* Shortened animation duration */
 }
 
 .bear1 {
@@ -89,6 +89,9 @@ html {
 
 .bear3 {
   animation-delay: 4s; /* Adjusted timing for quicker transitions */
+}
+.bear4{
+    animation-delay: 6s;
 }
 
 @keyframes bear-animation {
