@@ -16,7 +16,7 @@ html {
 
 .treasure {
   position: absolute;
-  top: 20px;
+  top:-10px;
   left: 20px;
   width: 25%;
   height: auto;
@@ -136,6 +136,7 @@ html {
   }
 
   .bear {
+    margin-top: 10%;
     width: 80px; /* Adjust the size of the bears */
   }
 
