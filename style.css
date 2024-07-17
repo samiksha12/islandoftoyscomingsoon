@@ -145,5 +145,6 @@ html {
 
   .treasure {
     width: 30%; /* Adjust the size of the treasure chest */
+    top:30px;
   }
 }
